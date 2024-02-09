@@ -1430,6 +1430,34 @@ footer{
     margin: 0px !important;
     height: 200px;
 }
+.social-1 img{
+    width: 15px;
+    height: 20px;
+    object-fit: cover;
+}
+.social-2{
+    padding:11px 19px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.social-1{
+    padding:11px 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.social-3{
+    padding:11px 12px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.social-2 img{
+    width: 10px;
+    height: 18px;
+}
+.social-3 img{ 
+    width: 18px;
+    height: 18px;
+}
   }
   /* @media screen and (min-width: 340px) {
     *, html,body{
