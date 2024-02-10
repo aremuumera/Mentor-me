@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@200,700,400,600,300,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -368,11 +370,23 @@
                                      <!-- Procedure account ends -->  
                                      
                                       <!-- membership testimonial start --> 
-            <div class="membership-start">
-                <div class="membership-header">
+            <div class="membership-start ">
+                <div class="membership-header swiper"  id="mySwiper">
                     <h1>Our member testimonial</h1>
-                    <div class="member-card-container">
-                        <div class="member-card">
+                    <div class="member-card-container swiper-wrapper">
+                        <div class="member-card swiper-slide">
+                            <p>
+                                joining mentor was a game-changer for me. My mentor guided me through a challenging career transition, providing valuable insights and advice. Thanks to their support, I not only navigated the change successfully but also discovered new opportunities.
+                            </p>
+                            <div class="member-dob">
+                                <img src="./assets/Ellipse 2690.svg" alt="">
+                                <div>
+                                    <h3>Aremu Mayowa</h3>
+                                    <p>January 3, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-card swiper-slide">
                             <p>
                                 joining mentor was a game-changer for me. My mentor guided me through a challenging career transition, providing valuable insights and advice. Thanks to their support, I not only navigated the change successfully but also discovered new opportunities.
                             </p>
@@ -384,40 +398,39 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="member-card">
+                        <div class="member-card swiper-slide">
                             <p>
                                 joining mentor was a game-changer for me. My mentor guided me through a challenging career transition, providing valuable insights and advice. Thanks to their support, I not only navigated the change successfully but also discovered new opportunities.
                             </p>
                             <div class="member-dob">
                                 <img src="./assets/Ellipse 2690.svg" alt="">
                                 <div>
-                                    <h3>Alabi Janet</h3>
+                                    <h3>Rasaq Ibrahim</h3>
+                                    <p>January 3, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member-card swiper-slide">
+                            <p>
+                                joining mentor was a game-changer for me. My mentor guided me through a challenging career transition, providing valuable insights and advice. Thanks to their support, I not only navigated the change successfully but also discovered new opportunities.
+                            </p>
+                            <div class="member-dob">
+                                <img src="./assets/Ellipse 2690.svg" alt="">
+                                <div>
+                                    <h3>Farouk Morakinyo</h3>
                                     <p>January 3, 2024</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-btn">
-                    <div class="swiper-btn-each">
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                        <button></button>
+                    <div class="swiper-button-prev swiper-arrow" id="custom-swiper-prev">
                     </div>
-                    <div class="swiper-arrow">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                                <path d="M40.9922 26.4997L28.139 39.3528M40.9922 26.4997L28.139 13.6465M40.9922 26.4997H11.0014" stroke="white" stroke-width="1.88095" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                                <path d="M11.0078 26.5003L23.861 13.6472M11.0078 26.5003L23.861 39.3535M11.0078 26.5003L40.9986 26.5003" stroke="white" stroke-width="1.88095" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+                    <div class="swiper-button-next swiper-arrow" id="custom-swiper-next">
                     </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </div>
                                          <!-- membership testimonial end--> 
 
@@ -487,8 +500,11 @@
             </footer>
         </div>
     </div>
+
+
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
         AOS.init();
       </script>
